@@ -2,7 +2,8 @@ package com.rule;
 
 import com.diagram.base.BaseStereotypeDiagram;
 import com.diagram.stereotype.ConnectStereotypeState;
-import com.diagram.stereotype.utils.StereotypeUtils;
+import com.diagram.stereotype.algorithm.NFA;
+import com.diagram.stereotype.algorithm.utils.DiagramSequence;
 import com.rule.base.BaseRule;
 
 import java.util.ArrayList;
@@ -20,8 +21,8 @@ public class CombinationRule extends BaseRule {
 
 	public boolean match(String pattern) {
 		BaseStereotypeDiagram diagram = generateDiagram();
-		StereotypeUtils.adjustSequence(0, diagram.start);
-		return StereotypeUtils.accept(pattern, diagram.start);
+		DiagramSequence.adjustSequence(0, diagram.getStart());
+		return NFA.accept(pattern, diagram.getStart());
 	}
 
 	@Override

@@ -1,31 +1,26 @@
 package com.diagram.stereotype;
 
 import com.diagram.base.BaseStereotypeDiagram;
-import com.diagram.stereotype.utils.StereotypeUtils;
 import com.diagram.unit.State;
 import com.rule.CharacterRule;
 import com.rule.CombinationRule;
-import com.rule.CountRule;
+import com.rule.CountingRule;
 import com.rule.StringRule;
 import com.rule.base.BaseRule;
 
-import java.io.*;
 import java.util.List;
 
 public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 	public ConnectStereotypeState(StringRule rule) {
-		System.out.println("Use ConnectStereotype to process StringRule-{" + rule.getRuleString() + "}");
 		solveStringRule(rule);
 	}
 
 	public ConnectStereotypeState(CombinationRule rule) {
-		System.out.println("Use ConnectStereotype to process CombinationRule-{" + rule.getRuleString() + "}");
 		solveCombinationRule(rule);
 	}
 
-	public ConnectStereotypeState(CountRule rule) {
-		System.out.println("Use ConnectStereotype to process CountRule-{" + rule.getRuleString() + "}");
+	public ConnectStereotypeState(CountingRule rule) {
 	}
 
 	private void solveStringRule(StringRule rule) {
@@ -36,7 +31,7 @@ public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 			current = next;
 		}
-		end = current;
+		accept = current;
 	}
 
 	private void solveCombinationRule(CombinationRule rule) {
@@ -67,7 +62,7 @@ public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 		state = processConnectCharacter(toOneRule, state);
 		this.start = state.start;
-		this.end = state.end;
+		this.accept = state.accept;
 	}
 
 	private ConnectStereotypeState processConnectCharacter(StringBuilder toOneRule, ConnectStereotypeState state) {
@@ -91,19 +86,19 @@ public class ConnectStereotypeState extends BaseStereotypeDiagram {
 	}
 
 	@Deprecated
-	private void solveCountRule(CountRule rule) {
+	private void solveCountRule(CountingRule rule) {
 		BaseRule item = rule.rule;
 		int least = rule.least, most = rule.most;
 	}
 
 	public ConnectStereotypeState(BaseStereotypeDiagram initDiagram) {
-		start = initDiagram.start;
-		end = initDiagram.end;
+		start = initDiagram.getStart();
+		accept = initDiagram.getAccept();
 	}
 
 	public ConnectStereotypeState addDiagram(BaseStereotypeDiagram diagram) {
-		end.addConvertFunc(new CharacterRule(), diagram.start);
-		end = diagram.end;
+		accept.addConvertFunc(new CharacterRule(), diagram.getStart());
+		accept = diagram.getAccept();
 		return this;
 	}
 }

@@ -1,26 +1,27 @@
 package com.diagram.table;
 
-import com.diagram.unit.ConvertFunc;
+import com.diagram.unit.TransitionFunc;
 import com.diagram.unit.State;
 
 import java.util.*;
 
-public class ConvertTable {
+public class TransitionTable {
 
 	private Set<String> terminalSymSet;
 	private Map<Integer, Map<String, Set<Integer>>> tables;
 
 	private State startState;
 
-	public ConvertTable(State startState) {
+	public TransitionTable(State startState) {
 		this.startState = startState;
 		terminalSymSet = new HashSet<>();
 		tables = new HashMap<>();
 	}
 
-	public void process() {
+	public TransitionTable process() {
 		Set<Integer> stateProcessSet = new HashSet<>();
 		subProcess(startState, stateProcessSet);
+		return this;
 	}
 
 	private void subProcess(State state, Set<Integer> stateIsProcess) {
@@ -30,9 +31,9 @@ public class ConvertTable {
 
 		Map<String, Set<Integer>> items = new HashMap<>();
 
-		List<ConvertFunc> funcList = state.getConvertFuncList();
+		List<TransitionFunc> funcList = state.getTransitionFuncList();
 
-		for (ConvertFunc func : funcList) {
+		for (TransitionFunc func : funcList) {
 			String terminalSym = func.getRule().getRuleString();
 			terminalSymSet.add(terminalSym);
 
@@ -67,16 +68,20 @@ public class ConvertTable {
 		Arrays.sort(arrayTerminalSymSet);
 
 		for (Object ts : arrayTerminalSymSet) {
-			result.append("\t\t\t").append(ts);
+			result.append("\t\t").append(ts);
 		}
 		result.append("\n");
 		for (Object key : arrayKeySet) {
 			Map<String, Set<Integer>> items = tables.get((int)key);
-			result.append(key).append("\t\t\t");
+			result.append(key).append("\t\t");
 			for (Object ts : arrayTerminalSymSet) {
 				Set<Integer> stateSet = items.get((String)ts);
-				if (stateSet == null) result.append("[]").append("\t\t\t");
-				else result.append(stateSet).append("\t\t\t");
+				if (stateSet == null) result.append("∅").append("\t\t");
+				else {
+					String s = stateSet.toString();
+					s = '{' + s.substring(1, s.length() - 1) + '}';
+					result.append(s).append("\t\t");
+				}
 			}
 			result.append("\n");
 		}

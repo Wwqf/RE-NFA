@@ -2,27 +2,25 @@ package com.diagram.unit;
 
 import com.rule.base.BaseRule;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class State {
 	private int tag = 0;
 	private StateType type = StateType.NORMAL_STATE;
-	private List<ConvertFunc> convertFuncList = new ArrayList<>();
+	private List<TransitionFunc> transitionFuncList = new ArrayList<>();
 
-	public void addConvertFunc(ConvertFunc ...ConvertFuncList) {
-		this.convertFuncList.addAll(Arrays.asList(ConvertFuncList));
+	public void addTransitionFunc(TransitionFunc... transitionFuncList) {
+		this.transitionFuncList.addAll(Arrays.asList(transitionFuncList));
 	}
 
 	public void addConvertFunc(BaseRule rule, State nextState) {
-		convertFuncList.add(new ConvertFunc(rule, nextState));
+		transitionFuncList.add(new TransitionFunc(rule, nextState));
 	}
 
-	public void addConvertFunc(List<ConvertFunc> ConvertFuncList) {
-		this.convertFuncList.addAll(ConvertFuncList);
+	public void addTransitionFunc(List<TransitionFunc> transitionFuncList) {
+		this.transitionFuncList.addAll(transitionFuncList);
 	}
 
 	public void setTag(int tag) {
@@ -41,11 +39,11 @@ public class State {
 		return type;
 	}
 
-	public List<ConvertFunc> getConvertFuncList() {
-		return convertFuncList;
+	public List<TransitionFunc> getTransitionFuncList() {
+		return transitionFuncList;
 	}
 
-	public void setConvertFuncList(List<ConvertFunc> convertFuncList) {
-		this.convertFuncList = convertFuncList;
+	public void setTransitionFuncList(List<TransitionFunc> transitionFuncList) {
+		this.transitionFuncList = transitionFuncList;
 	}
 }

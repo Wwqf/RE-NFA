@@ -1,8 +1,5 @@
 package com.test;
 
-import com.diagram.stereotype.utils.StereotypeUtils;
-import com.diagram.unit.State;
-import com.logic.RuleDiagram;
 import com.logic.ScanningGrammar;
 
 public class TestRE {
@@ -19,15 +16,15 @@ public class TestRE {
 	}
 
 	public void test(String startStateKey, String pattern) {
-		RuleDiagram start = grammar.getRuleDiagram(startStateKey);
+//		RuleDiagram start = grammar.getRuleDiagram(startStateKey);
 //		System.out.println(start.getConvertTableString());
-		System.out.println("Test(" + startStateKey + "): " + pattern + " --> " + StereotypeUtils.accept(pattern, start.diagram.start));
+//		System.out.println("Test(" + startStateKey + "): " + pattern + " --> " + NFA.accept(pattern, start.diagram.getStart()));
 	}
 
 	public void test(String startStateKey, String pattern, boolean isTrim) {
-		RuleDiagram start = grammar.getRuleDiagram(startStateKey);
+//		RuleDiagram start = grammar.getRuleDiagram(startStateKey);
 //		System.out.println(start.getConvertTableString());
-		System.out.println("Test(" + startStateKey + "): " + pattern + " --> " + StereotypeUtils.accept(pattern, start.diagram.start, isTrim));
+//		System.out.println("Test(" + startStateKey + "): " + pattern + " --> " + NFA.accept(pattern, start.diagram.getStart(), isTrim));
 	}
 
 }

@@ -2,7 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ee2cba-2b61-44f8-a2e0-964f56e3387f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ClosureStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yanuas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yanuas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseClosureStereotypeDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseClosureStereotypeDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseStereotypeDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseStereotypeDiagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/closure/ClosureAttrType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ConnectStereotypeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ConnectStereotypeState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/KleeneClosureState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/KleeneClosureState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/OrStereotypeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/OrStereotypeState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/PositiveClosureState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/PositiveClosureState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/SingleStereotypeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/SingleStereotypeState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ZeroOneClosureState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ZeroOneClosureState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/utils/StereotypeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/table/ConvertTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/ConvertFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/StateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/StateType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/logic/RuleDiagram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/logic/ScanningGrammar$CurrentProduction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/logic/ScanningGrammar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/logic/ScanningGrammar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/logic/io/Grammar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/logic/io/GrammarBuffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/logic/io/GrammarBuffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CombinationRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CombinationRule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CountRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/OrRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/OrRule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/test/TestRE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/test/TestRE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/data/input/test.i" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/data/input/test.i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/base/BaseClosureStereotypeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/base/BaseClosureStereotypeDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/base/BaseStereotypeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/base/BaseStereotypeDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/closure/ClosureAttrType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/closure/ClosureAttrType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/KleeneClosureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/KleeneClosureState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/OrStereotypeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/OrStereotypeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/PositiveClosureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/PositiveClosureState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/SingleStereotypeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/SingleStereotypeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/ZeroOneClosureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/ZeroOneClosureState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/utils/StereotypeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/table/ConvertTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/table/TransitionTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/unit/ConvertFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/unit/TransitionFunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/unit/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/unit/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diagram/unit/StateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/unit/StateType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/logic/RuleDiagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/logic/ScanningGrammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/logic/ScanningGrammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/logic/io/Grammar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/logic/io/GrammarBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/logic/io/GrammarBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rule/CombinationRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/CombinationRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rule/CountRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/CountingRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/rule/OrRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/OrRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/test/TestRE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/TestRE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/input/test.i" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/input/test.i" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +76,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/diagram/unit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -81,7 +135,12 @@
       <workItem from="1580183874766" duration="1761000" />
       <workItem from="1580205117341" duration="13911000" />
       <workItem from="1580281810376" duration="5697000" />
-      <workItem from="1580363051380" duration="15667000" />
+      <workItem from="1580363051380" duration="16658000" />
+      <workItem from="1580435802672" duration="1521000" />
+      <workItem from="1580974136492" duration="105000" />
+      <workItem from="1580974323677" duration="38000" />
+      <workItem from="1581125906044" duration="14497000" />
+      <workItem from="1581158387840" duration="8133000" />
     </task>
     <servers />
   </component>
@@ -93,7 +152,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -103,59 +164,49 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>352</line>
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>348</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>349</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>350</line>
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>351</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>353</line>
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>65</line>
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/logic/ScanningGrammar.java</url>
-          <line>341</line>
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>66</line>
           <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="136" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

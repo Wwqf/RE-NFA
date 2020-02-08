@@ -12,12 +12,13 @@ import java.util.List;
 public class OrRule extends ComplicatedRule {
 
 	protected List<BaseRule> rules = new ArrayList<>();
-	public boolean isNegate = false;
+	// 是否为补集字符类
+	public boolean isComplemented = false;
 
 	@Override
 	public boolean match(char matchCharacter) {
 		boolean result = subMatch(matchCharacter);
-		if (isNegate) return !result;
+		if (isComplemented) return !result;
 		return result;
 	}
 
@@ -53,7 +54,7 @@ public class OrRule extends ComplicatedRule {
 	@Override
 	public String getRuleString() {
 		StringBuilder result = new StringBuilder("[");
-		if (isNegate) {
+		if (isComplemented) {
 			result.append("^");
 		}
 

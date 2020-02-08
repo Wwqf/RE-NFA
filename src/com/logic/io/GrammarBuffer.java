@@ -1,12 +1,14 @@
 package com.logic.io;
 
+import com.diagram.stereotype.algorithm.utils.Production;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GrammarBuffer {
 	private BufferedReader reader;
-	private List<Grammar> grammarList;
+	private List<Production> grammarList;
 
 	public GrammarBuffer(String filePath) {
 		grammarList = new ArrayList<>();
@@ -28,7 +30,7 @@ public class GrammarBuffer {
 		}
 	}
 
-	public List<Grammar> getGrammarList() {
+	public List<Production> getGrammarList() {
 		String production;
 
 		try {
@@ -40,7 +42,7 @@ public class GrammarBuffer {
 					System.out.println("The production rule has wrong.");
 					System.exit(1);
 				}
-				Grammar grammar = new Grammar(strings[0].trim(), strings[1].trim());
+				Production grammar = new Production(strings[0].trim(), strings[1].trim());
 				grammarList.add(grammar);
 			}
 		} catch (IOException e) {

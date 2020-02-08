@@ -1,5 +1,8 @@
-package com.diagram.closure;
+package com.diagram.stereotype.closure;
 
+/**
+ * 闭包属性枚举
+ */
 public enum ClosureAttrType {
 	KLEENE_CLOSURE,
 	POSITIVE_CLOSURE,

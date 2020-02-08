@@ -2,11 +2,11 @@ package com.diagram.unit;
 
 import com.rule.base.BaseRule;
 
-public class ConvertFunc {
+public class TransitionFunc {
 	private BaseRule rule;
 	private State nextState;
 
-	public ConvertFunc(BaseRule rule, State nextState) {
+	public TransitionFunc(BaseRule rule, State nextState) {
 		this.rule = rule;
 		this.nextState = nextState;
 	}
@@ -17,5 +17,9 @@ public class ConvertFunc {
 
 	public State getNextState() {
 		return nextState;
+	}
+
+	public boolean match(char matchCharacter) {
+		return rule.match(matchCharacter);
 	}
 }
