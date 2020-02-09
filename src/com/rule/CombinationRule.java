@@ -9,6 +9,9 @@ import com.rule.base.BaseRule;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 组合规则，多条规则的集合，此规则和计数规则为特例规则（匹配方式转变）
+ */
 public class CombinationRule extends BaseRule {
 
 	private List<BaseRule> rules = new ArrayList<>();

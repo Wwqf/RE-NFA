@@ -4,15 +4,18 @@ import com.diagram.base.BaseStereotypeDiagram;
 import com.diagram.stereotype.KleeneClosureState;
 import com.diagram.stereotype.PositiveClosureState;
 import com.diagram.stereotype.ZeroOneClosureState;
+import com.diagram.stereotype.closure.ClosureAttrType;
 import com.rule.base.BaseRule;
-import com.rule.enums.ClosureType;
 
+/**
+ * 闭包规则，包含一个基本规则和一个闭包属性
+ */
 public class ClosureRule extends BaseRule {
 
 	private BaseRule rule;
-	private ClosureType type;
+	private ClosureAttrType type;
 
-	public ClosureRule(BaseRule rule, ClosureType type) {
+	public ClosureRule(BaseRule rule, ClosureAttrType type) {
 		this.rule = rule;
 		this.type = type;
 	}
@@ -24,9 +27,9 @@ public class ClosureRule extends BaseRule {
 
 	@Override
 	public BaseStereotypeDiagram generateDiagram() {
-		if (type == ClosureType.KLEENE_CLOSURE) {
+		if (type == ClosureAttrType.KLEENE_CLOSURE) {
 			return new KleeneClosureState(rule);
-		} else if (type == ClosureType.POSITIVE_CLOSURE) {
+		} else if (type == ClosureAttrType.POSITIVE_CLOSURE) {
 			return new PositiveClosureState(rule);
 		}
 		return new ZeroOneClosureState(rule);
@@ -35,13 +38,13 @@ public class ClosureRule extends BaseRule {
 	@Override
 	public String getRuleString() {
 		String result = "(";
-		if (type == ClosureType.KLEENE_CLOSURE) {
+		if (type == ClosureAttrType.KLEENE_CLOSURE) {
 			result += rule.getRuleString();
 			result += ")*";
-		} else if (type == ClosureType.POSITIVE_CLOSURE) {
+		} else if (type == ClosureAttrType.POSITIVE_CLOSURE) {
 			result += rule.getRuleString();
 			result += ")+";
-		} else if (type == ClosureType.ZERO_ONE_CLOSURE) {
+		} else if (type == ClosureAttrType.ZERO_ONE_CLOSURE) {
 			result += rule.getRuleString();
 			result += ")?";
 		}

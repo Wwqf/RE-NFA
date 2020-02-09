@@ -5,6 +5,9 @@ import com.rule.CharacterRule;
 import com.rule.OrRule;
 import com.rule.base.BaseRule;
 
+/**
+ * 或定式
+ */
 public class OrStereotypeState extends BaseStereotypeDiagram {
 
 	public OrStereotypeState(OrRule orRule) {

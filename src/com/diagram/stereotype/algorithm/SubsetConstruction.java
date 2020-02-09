@@ -1,6 +1,6 @@
 package com.diagram.stereotype.algorithm;
 
-import com.diagram.stereotype.utils.Symbols;
+import com.diagram.stereotype.algorithm.utils.Symbols;
 import com.diagram.unit.State;
 import com.diagram.unit.StateType;
 import com.diagram.unit.TransitionFunc;

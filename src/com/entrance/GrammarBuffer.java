@@ -1,4 +1,4 @@
-package com.logic.io;
+package com.entrance;
 
 import com.diagram.stereotype.algorithm.utils.Production;
 
@@ -6,6 +6,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 读取产生式集合，即一个输入文件
+ */
 public class GrammarBuffer {
 	private BufferedReader reader;
 	private List<Production> grammarList;

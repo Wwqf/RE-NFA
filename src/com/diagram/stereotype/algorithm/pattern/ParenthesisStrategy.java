@@ -72,7 +72,11 @@ public class ParenthesisStrategy implements RuleStrategy {
 				isOrRule = true;
 				production.offset(1);
 			} else {
-				temporary.append(c);
+				if (c == '\\') {
+					production.offset(1);
+					c = production.getChar();
+					temporary.append(c);
+				} else temporary.append(c);
 				production.offset(1);
 			}
 		}

@@ -4,6 +4,10 @@ import com.diagram.base.BaseStereotypeDiagram;
 import com.diagram.stereotype.SingleStereotypeState;
 import com.rule.base.BaseRule;
 
+/**
+ * 范围规则，连词符的应用规则
+ * [a-z] [0-9]
+ */
 public class RangeRule extends BaseRule {
 
 	private char left, right;

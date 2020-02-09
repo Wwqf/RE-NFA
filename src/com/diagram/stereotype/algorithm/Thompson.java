@@ -62,7 +62,6 @@ public class Thompson {
 			throw new RuntimeException("Finite automata can't be built.");
 		}
 
-		automataMap.put(production.getHead(), result);
 		return result;
 	}
 }

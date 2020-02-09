@@ -5,6 +5,9 @@ import com.diagram.unit.State;
 
 import java.util.*;
 
+/**
+ * NFA的转换表
+ */
 public class TransitionTable {
 
 	private Set<String> terminalSymSet;

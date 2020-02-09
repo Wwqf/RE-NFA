@@ -10,6 +10,9 @@ import com.rule.base.BaseRule;
 
 import java.util.List;
 
+/**
+ * 连接状态定式, 为多条规则生成一个有限状态自动机
+ */
 public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 	public ConnectStereotypeState(StringRule rule) {

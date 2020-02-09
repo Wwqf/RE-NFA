@@ -9,6 +9,9 @@ import com.rule.base.ComplicatedRule;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 或规则，匹配规则与组合规则不同，或规则只要匹配其中一条即可，而组合规则需要按添加的规则顺序匹配。
+ */
 public class OrRule extends ComplicatedRule {
 
 	protected List<BaseRule> rules = new ArrayList<>();

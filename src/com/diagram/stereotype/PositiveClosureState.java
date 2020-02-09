@@ -6,6 +6,9 @@ import com.diagram.stereotype.closure.ClosureAttrType;
 import com.rule.CharacterRule;
 import com.rule.base.BaseRule;
 
+/**
+ * 传入基本规则，生成一个正闭包有限状态自动机
+ */
 public class PositiveClosureState extends BaseClosureStereotypeDiagram {
 
 	public PositiveClosureState(BaseRule rule) {

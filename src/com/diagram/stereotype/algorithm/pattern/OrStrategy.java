@@ -72,14 +72,17 @@ public class OrStrategy implements RuleStrategy {
 						// 不是连词符，当做一个字符处理
 						ruleStack.push(new CharacterRule(c));
 					}
+					// 处理完字符，偏移一位
+					production.offset(1);
 					break;
 				default:
 					ruleStack.push(new CharacterRule(c));
+					// 处理完字符，偏移一位
+					production.offset(1);
 					break;
 			}
 
-			// 处理完字符，偏移一位
-			production.offset(1);
+
 		}
 
 		while (!ruleStack.empty()) {
@@ -88,6 +91,10 @@ public class OrStrategy implements RuleStrategy {
 
 		// 因为扫描到']'跳出循环，则当前处于']'字符, 偏移一位到下一个字符
 		production.offset(1);
+
+		if (orRule.getRules().size() == 1) {
+			return new FiniteAutomata(orRule.getRules().get(0));
+		}
 
 		return new FiniteAutomata(orRule);
 	}

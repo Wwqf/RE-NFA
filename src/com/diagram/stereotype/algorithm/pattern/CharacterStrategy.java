@@ -23,6 +23,9 @@ public class CharacterStrategy implements RuleStrategy {
 
 	@Override
 	public FiniteAutomata construct(Production production) {
+		if (production.getHead().equals("ws")) {
+			System.out.println();
+		}
 		StringBuilder appendStr = new StringBuilder();
 
 		boolean isRunning = true;
