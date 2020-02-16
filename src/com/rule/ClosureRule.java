@@ -6,11 +6,12 @@ import com.diagram.stereotype.PositiveClosureState;
 import com.diagram.stereotype.ZeroOneClosureState;
 import com.diagram.stereotype.closure.ClosureAttrType;
 import com.rule.base.BaseRule;
+import com.rule.base.SimpleRule;
 
 /**
  * 闭包规则，包含一个基本规则和一个闭包属性
  */
-public class ClosureRule extends BaseRule {
+public class ClosureRule extends SimpleRule {
 
 	private BaseRule rule;
 	private ClosureAttrType type;

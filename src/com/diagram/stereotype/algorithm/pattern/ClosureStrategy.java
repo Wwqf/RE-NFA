@@ -2,8 +2,8 @@ package com.diagram.stereotype.algorithm.pattern;
 
 import com.diagram.stereotype.algorithm.FiniteAutomata;
 import com.diagram.stereotype.algorithm.utils.Production;
+import com.diagram.stereotype.closure.ClosureAttrType;
 import com.rule.ClosureRule;
-import com.rule.enums.ClosureType;
 
 import javax.accessibility.AccessibilityProvider;
 
@@ -22,17 +22,17 @@ public class ClosureStrategy implements RuleStrategy {
 			if (production.getChar() == '+') {
 				production.offset(1);
 				return new FiniteAutomata(
-						new ClosureRule(preAutomata.rule, ClosureType.POSITIVE_CLOSURE)
+						new ClosureRule(preAutomata.rule, ClosureAttrType.POSITIVE_CLOSURE)
 				);
 			} else if (production.getChar() == '*') {
 				production.offset(1);
 				return new FiniteAutomata(
-						new ClosureRule(preAutomata.rule, ClosureType.KLEENE_CLOSURE)
+						new ClosureRule(preAutomata.rule, ClosureAttrType.KLEENE_CLOSURE)
 				);
 			} else if (production.getChar() == '?') {
 				production.offset(1);
 				return new FiniteAutomata(
-						new ClosureRule(preAutomata.rule, ClosureType.ZERO_ONE_CLOSURE)
+						new ClosureRule(preAutomata.rule, ClosureAttrType.ZERO_ONE_CLOSURE)
 				);
 			}
 		} catch (Exception ignored) {

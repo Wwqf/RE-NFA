@@ -5,6 +5,7 @@ import com.diagram.stereotype.ConnectStereotypeState;
 import com.diagram.stereotype.algorithm.NFA;
 import com.diagram.stereotype.algorithm.utils.DiagramSequence;
 import com.rule.base.BaseRule;
+import com.rule.base.ComplicatedRule;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * 组合规则，多条规则的集合，此规则和计数规则为特例规则（匹配方式转变）
  */
-public class CombinationRule extends BaseRule {
+public class CombinationRule extends ComplicatedRule {
 
 	private List<BaseRule> rules = new ArrayList<>();
 
