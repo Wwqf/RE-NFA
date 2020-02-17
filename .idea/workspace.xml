@@ -1,98 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7ee2cba-2b61-44f8-a2e0-964f56e3387f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yanuas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yanuas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_58.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalFA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FinalFA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseClosureStereotypeDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseClosureStereotypeDiagram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseStereotypeDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/base/BaseStereotypeDiagram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ConnectStereotypeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ConnectStereotypeState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/KleeneClosureState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/KleeneClosureState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/OrStereotypeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/OrStereotypeState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/PositiveClosureState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/PositiveClosureState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/SingleStereotypeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/SingleStereotypeState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ZeroOneClosureState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/ZeroOneClosureState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/FiniteAutomata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/NFA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/SubsetConstruction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/Thompson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/pattern/BraceStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/pattern/CharacterStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/pattern/ClosureStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/pattern/OrStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/pattern/RuleStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/utils/DiagramSequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/utils/Escape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/utils/Production.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/algorithm/utils/Symbols.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/stereotype/closure/ClosureAttrType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/table/TransitionTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/StateType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/StateType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/diagram/unit/TransitionFunc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/entrance/GrammarBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/entrance/ReadRegular.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CharacterRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CharacterRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/ClosureRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/ClosureRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CombinationRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CombinationRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/CountingRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/OrRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/OrRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/RangeRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/RangeRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/StringRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/StringRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/base/BaseRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/base/BaseRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/base/ComplicatedRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/base/ComplicatedRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/com/rule/base/SimpleRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/com/rule/base/SimpleRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/data/input/decimal.i" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/data/input/decimal.i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/data/input/id.i" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalFA/data/input/id.i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalFA/data/sample/sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/base/BaseClosureStereotypeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/base/BaseClosureStereotypeDiagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/base/BaseStereotypeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/base/BaseStereotypeDiagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/ConnectStereotypeState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/KleeneClosureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/KleeneClosureState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/OrStereotypeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/OrStereotypeState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/PositiveClosureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/PositiveClosureState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/SingleStereotypeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/SingleStereotypeState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/ZeroOneClosureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/stereotype/ZeroOneClosureState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/DiagramAccept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/FiniteAutomata.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/SubsetConstruction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/Thompson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/BraceStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/CharacterStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ClosureStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/OrStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/ParenthesisStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/pattern/RuleStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/utils/DiagramSequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/utils/Escape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/utils/Production.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/algorithm/utils/Symbols.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/stereotype/closure/ClosureAttrType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/table/TransitionTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/unit/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/unit/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/unit/StateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diagram/unit/StateType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diagram/unit/TransitionFunc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/entrance/GrammarBuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/entrance/ReadRegular.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/CharacterRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/CharacterRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/ClosureRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/ClosureRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/CombinationRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/CombinationRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/CountingRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/OrRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/OrRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/RangeRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/RangeRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/StringRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/StringRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/base/BaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/base/BaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/base/ComplicatedRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/base/ComplicatedRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/rule/base/SimpleRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rule/base/SimpleRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/input/decimal.i" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/input/decimal.i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/input/id.i" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/input/id.i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/sample/sample.json" beforeDir="false" />
-    </list>
+    <list default="true" id="e7ee2cba-2b61-44f8-a2e0-964f56e3387f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +87,7 @@
       <workItem from="1580205117341" duration="13911000" />
       <workItem from="1580281810376" duration="5697000" />
       <workItem from="1580363051380" duration="15667000" />
+      <workItem from="1581915493332" duration="247000" />
     </task>
     <servers />
   </component>

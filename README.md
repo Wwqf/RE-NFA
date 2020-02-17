@@ -100,7 +100,7 @@ $$
 
 ​	为了防止生成错乱，原本每个定式的构造都是传入Base Rule，后来强制规定哪个规则可以传入哪个定式构造函数。
 
-![image-20200214115048419](/home/yanuas/.config/Typora/typora-user-images/image-20200214115048419.png)
+![](https://github.com/Wwqf/RE-NFA/tree/version1.1image-20200214115048419.png)
 
 ​	
 
