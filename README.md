@@ -46,17 +46,17 @@ $$
 
 ​	定义： 规则 R∈Σ，可以从当前状态通过R到达新的状态。
 
-​	![image-20200214104027347](/home/yanuas/.config/Typora/typora-user-images/image-20200214104027347.png)	`图一`
+​	![image-20200214104027347](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214104027347.png)	`图一`
 
 ​	例如`图一`，0号状态可以通过**单字符规则**（CharacterRule）到达1号状态。
 
-​	 	![image-20200214105555581](/home/yanuas/.config/Typora/typora-user-images/image-20200214105555581.png)	`图二`
+​	 	![image-20200214105555581](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214105555581.png)	`图二`
 
 ​	在`图二`中，0号状态可以通过**或规则**（OrRule），即0~9中任意一个字符可以到达1号状态。
 
 ​	`图二`也是`图三`的简化版（防止状态数过多）：
 
-​	![](/home/yanuas/.config/Typora/typora-user-images/image-20200214110315254.png)		`图三`
+​	![](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214110315254.png)		`图三`
 
 ​	在代码中，共有七个实际规则：
 
@@ -72,7 +72,7 @@ $$
 
 ​	在其中，字符串规则不是必要规则，只是为了简化状态数所用规则。（在用**连接定式**时，两个正则式之间需要插入一条空转换函数，如果类似 `double -> double` 这条正则式，每个字符构成的单字符规则，在连接时需要插入五个空转换函数，将多出五个无用状态。）
 
-![image-20200214113954708](/home/yanuas/.config/Typora/typora-user-images/image-20200214113954708.png)
+![image-20200214113954708](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214113954708.png)
 
 ​	在类图中，还有三个类：
 
@@ -90,17 +90,17 @@ $$
 
 ​		`图四`的正则式为: r -> a，构建一个**单定式**有限状态自动机，0号状态即Start State，1号状态即Accept State。
 
-​		![image-20200214110816189](/home/yanuas/.config/Typora/typora-user-images/image-20200214110816189.png)	`图四`
+​		![image-20200214110816189](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214110816189.png)	`图四`
 
 ​		为`图四`构建一个Kleene闭包，即 ***r*** * 。
 
-​	![image-20200214111314977](/home/yanuas/.config/Typora/typora-user-images/image-20200214111314977.png)	`图五`
+​	![image-20200214111314977](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214111314977.png)	`图五`
 
 ​		
 
 ​	为了防止生成错乱，原本每个定式的构造都是传入Base Rule，后来强制规定哪个规则可以传入哪个定式构造函数。
 
-![](https://github.com/Wwqf/RE-NFA/tree/version1.1image-20200214115048419.png)
+![](https://github.com/Wwqf/RE-NFA/tree/version1.1/src/data/image/image-20200214115048419.png)
 
 ​	
 
