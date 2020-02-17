@@ -2,18 +2,13 @@ package com.rule;
 
 import com.diagram.base.BaseStereotypeDiagram;
 import com.diagram.stereotype.ConnectStereotypeState;
-import com.diagram.stereotype.algorithm.NFA;
-import com.diagram.stereotype.algorithm.utils.DiagramSequence;
+import com.diagram.stereotype.utils.StereotypeUtils;
 import com.rule.base.BaseRule;
-import com.rule.base.ComplicatedRule;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 组合规则，多条规则的集合，此规则和计数规则为特例规则（匹配方式转变）
- */
-public class CombinationRule extends ComplicatedRule {
+public class CombinationRule extends BaseRule {
 
 	private List<BaseRule> rules = new ArrayList<>();
 
@@ -25,8 +20,8 @@ public class CombinationRule extends ComplicatedRule {
 
 	public boolean match(String pattern) {
 		BaseStereotypeDiagram diagram = generateDiagram();
-		DiagramSequence.adjustSequence(0, diagram.getStart());
-		return NFA.accept(pattern, diagram.getStart());
+		StereotypeUtils.adjustSequence(0, diagram.start);
+		return StereotypeUtils.accept(pattern, diagram.start);
 	}
 
 	@Override

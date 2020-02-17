@@ -1,29 +1,31 @@
 package com.diagram.stereotype;
 
 import com.diagram.base.BaseStereotypeDiagram;
+import com.diagram.stereotype.utils.StereotypeUtils;
 import com.diagram.unit.State;
 import com.rule.CharacterRule;
 import com.rule.CombinationRule;
-import com.rule.CountingRule;
+import com.rule.CountRule;
 import com.rule.StringRule;
 import com.rule.base.BaseRule;
 
+import java.io.*;
 import java.util.List;
 
-/**
- * 连接状态定式, 为多条规则生成一个有限状态自动机
- */
 public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 	public ConnectStereotypeState(StringRule rule) {
+		System.out.println("Use ConnectStereotype to process StringRule-{" + rule.getRuleString() + "}");
 		solveStringRule(rule);
 	}
 
 	public ConnectStereotypeState(CombinationRule rule) {
+		System.out.println("Use ConnectStereotype to process CombinationRule-{" + rule.getRuleString() + "}");
 		solveCombinationRule(rule);
 	}
 
-	public ConnectStereotypeState(CountingRule rule) {
+	public ConnectStereotypeState(CountRule rule) {
+		System.out.println("Use ConnectStereotype to process CountRule-{" + rule.getRuleString() + "}");
 	}
 
 	private void solveStringRule(StringRule rule) {
@@ -34,7 +36,7 @@ public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 			current = next;
 		}
-		accept = current;
+		end = current;
 	}
 
 	private void solveCombinationRule(CombinationRule rule) {
@@ -65,7 +67,7 @@ public class ConnectStereotypeState extends BaseStereotypeDiagram {
 
 		state = processConnectCharacter(toOneRule, state);
 		this.start = state.start;
-		this.accept = state.accept;
+		this.end = state.end;
 	}
 
 	private ConnectStereotypeState processConnectCharacter(StringBuilder toOneRule, ConnectStereotypeState state) {
@@ -89,19 +91,19 @@ public class ConnectStereotypeState extends BaseStereotypeDiagram {
 	}
 
 	@Deprecated
-	private void solveCountRule(CountingRule rule) {
+	private void solveCountRule(CountRule rule) {
 		BaseRule item = rule.rule;
 		int least = rule.least, most = rule.most;
 	}
 
 	public ConnectStereotypeState(BaseStereotypeDiagram initDiagram) {
-		start = initDiagram.getStart();
-		accept = initDiagram.getAccept();
+		start = initDiagram.start;
+		end = initDiagram.end;
 	}
 
 	public ConnectStereotypeState addDiagram(BaseStereotypeDiagram diagram) {
-		accept.addConvertFunc(new CharacterRule(), diagram.getStart());
-		accept = diagram.getAccept();
+		end.addConvertFunc(new CharacterRule(), diagram.start);
+		end = diagram.end;
 		return this;
 	}
 }

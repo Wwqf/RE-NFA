@@ -3,13 +3,8 @@ package com.rule;
 import com.diagram.base.BaseStereotypeDiagram;
 import com.diagram.stereotype.SingleStereotypeState;
 import com.rule.base.BaseRule;
-import com.rule.base.SimpleRule;
 
-/**
- * 范围规则，连词符的应用规则
- * [a-z] [0-9]
- */
-public class RangeRule extends SimpleRule {
+public class RangeRule extends BaseRule {
 
 	private char left, right;
 	public RangeRule(char left, char right) {

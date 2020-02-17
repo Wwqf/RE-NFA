@@ -2,13 +2,13 @@ package com.diagram.stereotype;
 
 import com.diagram.base.BaseClosureStereotypeDiagram;
 import com.diagram.base.BaseStereotypeDiagram;
-import com.diagram.stereotype.closure.ClosureAttrType;
+import com.diagram.closure.ClosureAttrType;
+import com.diagram.stereotype.utils.StereotypeUtils;
 import com.rule.CharacterRule;
 import com.rule.base.BaseRule;
 
-/**
- * 传入基本规则，生成一个kleene闭包有限状态自动机
- */
+import java.io.*;
+
 public class KleeneClosureState extends BaseClosureStereotypeDiagram {
 
 	public KleeneClosureState(BaseRule rule) {
@@ -19,13 +19,15 @@ public class KleeneClosureState extends BaseClosureStereotypeDiagram {
 
 	@Override
 	protected void connectClosure() {
+		System.out.println("KleeneClosure is being executed. [" + rule.getRuleString() + "]");
+
 		BaseStereotypeDiagram diagram = rule.generateDiagram();
 
-		start.addConvertFunc(new CharacterRule(), diagram.getStart());
-		start.addConvertFunc(new CharacterRule(), accept);
+		start.addConvertFunc(new CharacterRule(), diagram.start);
+		start.addConvertFunc(new CharacterRule(), end);
 
-		diagram.getAccept().addConvertFunc(new CharacterRule(), accept);
-		diagram.getAccept().addConvertFunc(new CharacterRule(), diagram.getStart());
+		diagram.end.addConvertFunc(new CharacterRule(), end);
+		diagram.end.addConvertFunc(new CharacterRule(), diagram.start);
 	}
 
 }

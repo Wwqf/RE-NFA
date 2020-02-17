@@ -1,16 +1,17 @@
 package com.diagram.stereotype;
 
 import com.diagram.base.BaseStereotypeDiagram;
+import com.diagram.stereotype.utils.StereotypeUtils;
 import com.rule.CharacterRule;
 import com.rule.OrRule;
 import com.rule.base.BaseRule;
 
-/**
- * 或定式
- */
+import java.io.*;
+
 public class OrStereotypeState extends BaseStereotypeDiagram {
 
 	public OrStereotypeState(OrRule orRule) {
+		System.out.println("Handle OrRule by OrStereotypeState - " + orRule.getRuleString() + "");
 		solveOrRule(orRule);
 	}
 
@@ -18,16 +19,16 @@ public class OrStereotypeState extends BaseStereotypeDiagram {
 		if (orRule.getRules().size() == 1) {
 
 			BaseStereotypeDiagram diagram = orRule.getRules().get(0).generateDiagram();
-			start = diagram.getStart();
-			accept = diagram.getAccept();
+			start = diagram.start;
+			end = diagram.end;
 
 			return ;
 		}
 
 		for (BaseRule rule : orRule.getRules()) {
 			BaseStereotypeDiagram diagram = rule.generateDiagram();
-			start.addConvertFunc(new CharacterRule(), diagram.getStart());
-			diagram.getAccept().addConvertFunc(new CharacterRule(), accept);
+			start.addConvertFunc(new CharacterRule(), diagram.start);
+			diagram.end.addConvertFunc(new CharacterRule(), end);
 		}
 	}
 }

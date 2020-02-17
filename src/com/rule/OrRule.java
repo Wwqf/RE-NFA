@@ -9,19 +9,15 @@ import com.rule.base.ComplicatedRule;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 或规则，匹配规则与组合规则不同，或规则只要匹配其中一条即可，而组合规则需要按添加的规则顺序匹配。
- */
 public class OrRule extends ComplicatedRule {
 
 	protected List<BaseRule> rules = new ArrayList<>();
-	// 是否为补集字符类
-	public boolean isComplemented = false;
+	public boolean isNegate = false;
 
 	@Override
 	public boolean match(char matchCharacter) {
 		boolean result = subMatch(matchCharacter);
-		if (isComplemented) return !result;
+		if (isNegate) return !result;
 		return result;
 	}
 
@@ -57,7 +53,7 @@ public class OrRule extends ComplicatedRule {
 	@Override
 	public String getRuleString() {
 		StringBuilder result = new StringBuilder("[");
-		if (isComplemented) {
+		if (isNegate) {
 			result.append("^");
 		}
 
